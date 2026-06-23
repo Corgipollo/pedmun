@@ -6,3 +6,5 @@ assets/video-frames/
 .vercel
 node_modules/
 *.log
+_tools/
+assets/_*
