@@ -1,0 +1,8 @@
+# Internos — no publicar
+RESEARCH-PEDMUN.md
+assets/video-frames/
+
+# Tooling
+.vercel
+node_modules/
+*.log
