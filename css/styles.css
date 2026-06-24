@@ -130,6 +130,9 @@ a{color:inherit;text-decoration:none}
 .cut__media--photo{background:radial-gradient(circle at 50% 38%,#241f1c,#131110);display:block;overflow:hidden}
 .cut__media--photo img{width:100%;height:100%;object-fit:contain;padding:10px;filter:drop-shadow(0 12px 20px rgba(0,0,0,.55));transition:transform .5s var(--ease)}
 .cut:hover .cut__media--photo img{transform:scale(1.06)}
+.cut__media--cover{background:#0d0b0a;display:block;overflow:hidden}
+.cut__media--cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s var(--ease)}
+.cut:hover .cut__media--cover img{transform:scale(1.06)}
 .cut__name--sm{font-size:1.25rem;margin-bottom:.2rem}
 .cut__price{font-family:var(--sans);font-weight:700;color:var(--gold-hi);font-size:1.15rem;margin-bottom:.7rem}
 .cut__price span{color:var(--text-dim);font-weight:400;font-size:.78rem}
@@ -163,6 +166,13 @@ a{color:inherit;text-decoration:none}
 .market ul{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.8rem;color:var(--text-dim)}
 .market li{padding-left:1.4rem;position:relative}
 .market li::before{content:"›";position:absolute;left:0;color:var(--gold);font-weight:700}
+/* Caja mayoreo */
+.caja{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;margin-top:1.5rem;background:var(--bg-elev);border:1px solid rgba(201,132,58,.4);border-radius:var(--r);overflow:hidden}
+.caja__img img{width:100%;height:100%;object-fit:cover;display:block;min-height:260px}
+.caja__text{padding:2.2rem}
+.caja__text h3{font-family:var(--serif);font-size:2rem;font-weight:600;margin-bottom:.7rem}
+.caja__text p{color:var(--text-dim);margin-bottom:1.5rem}
+@media(max-width:760px){.caja{grid-template-columns:1fr}}
 
 /* ---------- Reseñas ---------- */
 .prueba__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
